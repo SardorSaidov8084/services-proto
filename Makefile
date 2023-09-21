@@ -11,3 +11,12 @@ gen-eater:
 	--go-grpc_opt=paths=import \
 	-I=$(PWD)eater \
 	$(PWD)eater/*.proto
+
+gen-restaurant-staff:
+	protoc \
+	--go_out=./genprotos \
+	--go_opt=paths=import \
+	--go-grpc_out=./genprotos \
+	--go-grpc_opt=paths=import \
+	-I=$(PWD)restaurant_staff \
+	$(PWD)restaurant_staff/*.proto
