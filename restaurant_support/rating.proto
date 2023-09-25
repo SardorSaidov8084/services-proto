@@ -20,21 +20,13 @@ message Rating {
     string updated_at = 9 [json_name = "updated_at"];
 }
 message CreateRatingRequest {
-    string entity_id = 1 [json_name = "entity_id"];
-    string eater_id = 2 [json_name = "eater_id"];
-    RestaurantInfo restaurant = 3 [json_name = "restaurant"];
-    EaterInfo eater = 4 [json_name = "eater"];
-    int32 rating = 5 [json_name = "rating"];
-    string comment = 6 [json_name = "comment"];
+    string Rating = 1 [json_name = "rating"];
 }
 message CreateRatingResponse {
     repeated Rating rating = 1 [json_name = "rating"];
 }
 message UpdateRatingRequest {
-    string rating_id = 1 [json_name = "rating_id"];
-    string eater_id = 2 [json_name = "eater_id"];
-    int32 rating = 3 [json_name = "rating"];
-    string comment = 4 [json_name = "comment"];
+    string Rating = 1 [json_name = "rating"];
 }
 message UpdateRatingResponse {
     repeated Rating rating = 1 [json_name = "rating"];
