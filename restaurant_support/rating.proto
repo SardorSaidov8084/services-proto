@@ -20,16 +20,16 @@ message Rating {
     string updated_at = 9 [json_name = "updated_at"];
 }
 message CreateRatingRequest {
-    string Rating = 1 [json_name = "rating"];
+    Rating  rating = 1 [json_name = "rating"];
 }
 message CreateRatingResponse {
-    repeated Rating rating = 1 [json_name = "rating"];
+    Rating rating = 1 [json_name = "rating"];
 }
 message UpdateRatingRequest {
-    string Rating = 1 [json_name = "rating"];
+    Rating rating = 1 [json_name = "rating"];
 }
 message UpdateRatingResponse {
-    repeated Rating rating = 1 [json_name = "rating"];
+    Rating rating = 1 [json_name = "rating"];
 }
 message GetRatingRequest {
     string rating_id = 1 [json_name = "rating_id"];
