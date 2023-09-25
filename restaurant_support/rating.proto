@@ -1,13 +1,14 @@
 syntax = "proto3";
 option go_package = "./restaurant_support";
+
+message EaterInfo {
+    string name = 1 [json_name = "name"];
+    string image_url = 2 [json_name = "image_url"];
+}
+message RestaurantInfo {
+    string name = 1 [json_name = "name"];
+}
 message Rating {
-    message EaterInfo {
-        string name = 1 [json_name = "name"];
-        string image_url = 2 [json_name = "image_url"];
-    }
-    message RestaurantInfo {
-        string name = 1 [json_name = "name"];
-    }
     string id = 1 [json_name = "id"];
     string entity_id = 2 [json_name = "entity_id"];
     string eater_id = 3 [json_name = "eater_id"];
@@ -17,6 +18,32 @@ message Rating {
     string comment = 7 [json_name = "comment"];
     string created_at = 8 [json_name = "created_at"];
     string updated_at = 9 [json_name = "updated_at"];
+}
+message CreateRatingRequest {
+    string entity_id = 1 [json_name = "entity_id"];
+    string eater_id = 2 [json_name = "eater_id"];
+    RestaurantInfo restaurant = 3 [json_name = "restaurant"];
+    EaterInfo eater = 4 [json_name = "eater"];
+    int32 rating = 5 [json_name = "rating"];
+    string comment = 6 [json_name = "comment"];
+}
+message CreateRatingResponse {
+    repeated Rating rating = 1 [json_name = "rating"];
+}
+message UpdateRatingRequest {
+    string rating_id = 1 [json_name = "rating_id"];
+    string eater_id = 2 [json_name = "eater_id"];
+    int32 rating = 3 [json_name = "rating"];
+    string comment = 4 [json_name = "comment"];
+}
+message UpdateRatingResponse {
+    repeated Rating rating = 1 [json_name = "rating"];
+}
+message GetRatingRequest {
+    string rating_id = 1 [json_name = "rating_id"];
+}
+message GetRatingResponse {
+    repeated Rating rating = 1 [json_name = "rating"];
 }
 message ListRatingRequest {
     string entity_id = 1 [json_name = "entity_id"];

@@ -5,4 +5,8 @@ import "rating.proto";
 
 service SupportService {
     rpc ListRating(ListRatingRequest) returns (ListRatingResponse);
+    rpc CreateRating(CreateRatingRequest) returns (CreateRatingResponse);
+    rpc UpdateRating(UpdateRatingRequest) returns (UpdateRatingResponse);
+    rpc GetRating(GetRatingRequest) returns (GetRatingResponse);
+
 }
