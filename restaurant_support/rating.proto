@@ -35,7 +35,7 @@ message GetRatingRequest {
     string rating_id = 1 [json_name = "rating_id"];
 }
 message GetRatingResponse {
-    repeated Rating rating = 1 [json_name = "rating"];
+    Rating rating = 1 [json_name = "rating"];
 }
 message ListRatingRequest {
     string entity_id = 1 [json_name = "entity_id"];
