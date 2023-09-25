@@ -29,3 +29,12 @@ gen-restaurant-restaurant:
 	--go-grpc_opt=paths=import \
 	-I=$(PWD)restaurant_restaurant \
 	$(PWD)restaurant_restaurant/*.proto
+
+gen-restaurant-support:
+	protoc \
+	--go_out=./genprotos \
+	--go_opt=paths=import \
+	--go-grpc_out=./genprotos \
+	--go-grpc_opt=paths=import \
+	-I=$(PWD)restaurant_support \
+	$(PWD)restaurant_support/*.proto
