@@ -10,4 +10,4 @@ service StaffService {
     rpc CreateManagerRestaurantAssignment(CreateManagerRestaurantAssignmentRequest) returns (CreateManagerRestaurantAssignmentResponse);
     rpc RemoveManagerRestaurantAssignment(RemoveManagerRestaurantAssignmentRequest) returns (RemoveManagerRestaurantAssignmentResponse);
     rpc GetManagerRestaurant(GetManagerRestaurantRequest) returns (GetManagerRestaurantResponse);   
-}
+}     
