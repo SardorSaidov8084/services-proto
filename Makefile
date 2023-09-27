@@ -39,11 +39,20 @@ gen-restaurant-support:
 	-I=$(PWD)restaurant_support \
 	$(PWD)restaurant_support/*.proto
 
+gen-restaurant-payment:
+	protoc \
+	--go_out=./genprotos \
+	--go_opt=paths=import \
+	--go-grpc_out=./genprotos \
+	--go-grpc_opt=paths=import \
+	-I=$(PWD)restaurant_payment \
+	$(PWD)restaurant_payment/*.proto
+
 gen-logistics-staff:
 	protoc \
 	--go_out=./genprotos \
 	--go_opt=paths=import \
 	--go-grpc_out=./genprotos \
 	--go-grpc_opt=paths=import \
-	-I=$(PWD)/locistics_staff \
-	$(PWD)/locistics_staff/*.proto
+	-I=$(PWD)/logistics_staff \
+	$(PWD)/logistics_staff/*.proto
