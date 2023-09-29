@@ -1,0 +1,10 @@
+syntax = "proto3";
+option go_package = "./logistics_vehicle";
+import "vehicle.proto";
+service VehicleService {
+    rpc CreateVehicle(CreateVehicleRequest) returns (CreateVehicleResponse);
+    rpc UpdateVehicle(UpdateVehicleRequest) returns (UpdateVehicleResponse);
+    rpc DeleteVehicle(DeleteVehicleRequest) returns (DeleteVehicleResponse);
+    rpc GetVehicle(GetVehicleRequest) returns (GetVehicleResponse);
+    rpc ListVehicle(ListVehicleRequest) returns (ListVehicleResponse);
+}
