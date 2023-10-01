@@ -45,3 +45,13 @@ message UpdateDriverProfileRequest {
 message UpdateDriverProfileResponse {
     DriverProfile profile = 1 [json_name = "profile"];
 }
+message DeleteDriverRequest {
+    string driver_id = 1 [json_name = "driver_id"];
+}
+message DeleteDriverResponse {
+}
+message ListDriverProfilesRequest {
+}
+message ListDriverProfilesResponse {
+    repeated DriverProfile profiles = 1 [json_name = "profiles"];
+}

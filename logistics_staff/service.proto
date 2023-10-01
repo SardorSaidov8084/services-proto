@@ -7,4 +7,7 @@ service StaffService {
     rpc ConfirmSmsCode(ConfirmSmsCodeRequest) returns (ConfirmSmsCodeResponse);
     rpc GetDriverProfile(GetDriverProfileRequest) returns (GetDriverProfileResponse);
     rpc UpdatpDriverProfile(UpdateDriverProfileRequest) returns (UpdateDriverProfileResponse);
+    rpc DeleteDriver(DeleteDriverRequest) returns (DeleteDriverResponse);
+    rpc ListDriverProfiles(ListDriverProfilesRequest) returns (ListDriverProfilesResponse);
+    
 }
