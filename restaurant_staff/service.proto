@@ -3,6 +3,7 @@ option go_package = "./restaurant_staff";
 import "manager.proto";
 service StaffService {
     rpc RegisterManager (RegisterManagerRequest) returns (RegisterManagerResponse);
+    rpc DeleteManager (DeleteManagerRequest) returns (DeleteManagerResponse);
     rpc ChangeManagerPassword(ChangeManagerPasswordRequest) returns (ChangeManagerPasswordResponse);
     rpc LoginManager(LoginManagerRequest) returns (LoginManagerResponse);
     rpc GetManagerProfile(GetManagerProfileRequest) returns (GetManagerProfileResponse);

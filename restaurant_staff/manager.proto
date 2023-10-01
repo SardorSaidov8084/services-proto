@@ -25,6 +25,11 @@ message RegisterManagerRequest {
 message RegisterManagerResponse {
     string manager_id = 1 [json_name = "manager_id"];
 }
+message DeleteManagerRequest {
+    string manager_id = 1 [json_name = "manager_id"];
+}
+message DeleteManagerResponse {
+}
 message ChangeManagerPasswordRequest {
     string manager_id = 1 [json_name = "manager_id"];
     string current_password = 2 [json_name = "current_password"];
