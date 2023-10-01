@@ -60,6 +60,12 @@ message UpdateManagerProfileRequest {
 message UpdateManagerProfileResponse {
     ManagerProfile profile = 1 [json_name = "profile"];
 }
+message ListManagerProfileByEntityRequest {
+    string entity_id = 1;
+}
+message ListManagerProfileByEntityResponse {
+    repeated ManagerProfile profiles = 1 [json_name = "profiles"];
+}
 message CreateManagerRestaurantAssignmentRequest {
     string manager_id = 1 [json_name = "manager_id"];
     string restaurant_id = 2 [json_name = "restaurant_id"];
