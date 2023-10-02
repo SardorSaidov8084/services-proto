@@ -35,6 +35,12 @@ message ListRestaurantByEntityRequest {
 message ListRestaurantByEntityResponse {
     repeated Restaurant restaurants = 1 [json_name = "restaurants"];
 }
+message GetRestaurantByEntityRequest {
+    string entity_id = 1 [json_name = "entity_id"];
+}
+message GetRestaurantByEntityResponse {
+    Restaurant restaurant = 1 [json_name = "restaurant"];
+}
 message RemoveRestaurantRequest {
     string restaurant_id = 1 [json_name = "restaurant_id"];
 }
