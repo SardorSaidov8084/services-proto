@@ -1,0 +1,10 @@
+syntax = "proto3";
+option go_package = "./logistics_support";
+import "rating.proto";
+
+service SupportService {
+    rpc CreateRating (CreateRatingRequest) returns (CreateRatingResponse);
+    rpc UpdateRating (UpdateRatingRequest) returns (UpdateRatingResponse);
+    rpc DeleteRating (DeleteRatingRequest) returns (DeleteRatingResponse);
+    rpc GetRating (GetRatingRequest) returns (GetRatingResponse);
+}

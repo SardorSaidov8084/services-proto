@@ -65,3 +65,12 @@ gen-logistics-vehicle:
 	--go-grpc_opt=paths=import \
 	-I=$(PWD)/logistics_vehicle \
 	$(PWD)/logistics_vehicle/*.proto
+
+gen-logistics-support:
+	protoc \
+	--go_out=./genprotos \
+	--go_opt=paths=import \
+	--go-grpc_out=./genprotos \
+	--go-grpc_opt=paths=import \
+	-I=$(PWD)/logistics_support \
+	$(PWD)/logistics_support/*.proto
