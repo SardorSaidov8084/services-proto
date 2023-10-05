@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./eater";
+option go_package = "github.com/SardorSaidov8084/services-proto/eater";
+package eater;
 import "eater.proto";
 import "address.proto";
 import "wallet.proto";
