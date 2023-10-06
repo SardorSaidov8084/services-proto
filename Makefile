@@ -24,11 +24,11 @@ gen-restaurant-staff:
 gen-restaurant-restaurant:
 	protoc \
 	--go_out=./genprotos \
-	--go_opt=paths=import \
+	--go_opt=paths=source_relative \
 	--go-grpc_out=./genprotos \
-	--go-grpc_opt=paths=import \
-	-I=$(PWD)restaurant_restaurant \
-	$(PWD)restaurant_restaurant/*.proto
+	--go-grpc_opt=paths=source_relative \
+	-I=$(PWD)/restaurant_restaurant \
+	$(PWD)/restaurant_restaurant/*.proto
 
 gen-restaurant-support:
 	protoc \

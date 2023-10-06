@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./restaurant_restaurant";
+option go_package = "github.com/SardorSaidov8084/services-proto/restaurant_restaurant";
+package restaurant_restaurant;
 import "restaurant_entity.proto";
 import "restaurant.proto";
 import "menu.proto";
