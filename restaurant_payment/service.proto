@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./restaurant_payment";
+option go_package = "github.com/SardorSaidov8084/services-proto/restaurant_payment";
+package restaurant_payment;
 import "merchant.proto";
 import "payment.proto";
 service RestaurantPayment {

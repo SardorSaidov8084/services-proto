@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./restaurant_support";
+option go_package = "github.com/SardorSaidov8084/services-proto/restaurant_support";
+package restaurant_support;
 
 message EaterInfo {
     string name = 1 [json_name = "name"];

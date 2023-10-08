@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./logistics_staff";
+option go_package = "github.com/SardorSaidov8084/services-proto/logistics_staff";
+package logistics_staff;
 message DriverProfile {
     string driver_id = 1 [json_name = "driver_id"];
     string name = 2 [json_name = "name"];

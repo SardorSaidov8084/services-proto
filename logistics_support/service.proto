@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./logistics_support";
+option go_package = "github.com/SardorSaidov8084/services-proto/logistics_support";
+package logistics_support;
 import "rating.proto";
 
 service SupportService {

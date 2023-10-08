@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./logistics_vehicle";
+option go_package = "github.com/SardorSaidov8084/services-proto/logistics_vehicle";
+package logistics_vehicle;
 import "vehicle.proto";
 service VehicleService {
     rpc CreateVehicle(CreateVehicleRequest) returns (CreateVehicleResponse);

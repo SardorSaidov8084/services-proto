@@ -1,5 +1,6 @@
 syntax = "proto3";
-option go_package = "./restaurant_staff";
+option go_package = "github.com/SardorSaidov8084/services-proto/restaurant_staff";
+package restaurant_staff;
 message ManagerProfile {
     string manager_id = 1 [json_name = "manager_id"];
     string entity_id = 2 [json_name = "entity_id"];
