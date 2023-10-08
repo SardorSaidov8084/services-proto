@@ -28,6 +28,6 @@ gen-protos:
 			--go_opt=paths=source_relative \
     		--go-grpc_out=./gen/$$dir \
 			--go-grpc_opt=paths=source_relative \
-			-I=$(PWD)/$$dir \
+			-I=$(PWD) \
    			$(PWD)/$$dir/*.proto; \
 	done

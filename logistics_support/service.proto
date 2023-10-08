@@ -1,7 +1,7 @@
 syntax = "proto3";
 option go_package = "github.com/SardorSaidov8084/services-proto/logistics_support";
 package logistics_support;
-import "rating.proto";
+import "logistics_support/rating.proto";
 
 service SupportService {
     rpc CreateRating (CreateRatingRequest) returns (CreateRatingResponse);
