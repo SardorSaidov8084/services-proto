@@ -24,6 +24,12 @@ message AddRestaurantRequest {
 message AddRestaurantResponse {
     Restaurant restaurant = 1 [json_name = "restaurant"];
 }
+message GetRestaurantRequest {
+    string restaurant_id = 1 [json_name = "restaurant_id"];
+}
+message GetRestaurantResponse {
+    Restaurant restaurant = 1 [json_name = "restaurant"];
+}
 message UpdateRestaurantRequest {
     Restaurant restaurant = 1 [json_name = "restaurant"];
 }

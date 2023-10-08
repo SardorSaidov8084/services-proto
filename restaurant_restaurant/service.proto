@@ -10,6 +10,7 @@ service RestaurantService {
     rpc CreateRestaurantEntity (CreateRestaurantEntityRequest) returns (CreateRestaurantEntityResponse);
     rpc UpdateRestaurantEntity(UpdateRestaurantEntityRequest) returns (UpdateRestaurantEntityResponse);
     rpc GetRestaurantByEntity(GetRestaurantByEntityRequest) returns (GetRestaurantByEntityResponse);
+    rpc GetRestaurant(GetRestaurantRequest) returns (GetRestaurantResponse);
     rpc ListRestaurantEntity(ListRestaurantEntityRequest) returns (ListRestaurantEntityResponse);
     rpc DeleteRestaurantEntity(DeleteRestaurantEntityRequest) returns (DeleteRestaurantEntityResponse);
     rpc AddRestaurant (AddRestaurantRequest) returns (AddRestaurantResponse);
