@@ -8,7 +8,7 @@ PROTO_DIRS=eater \
 	logistics_vehicle \
 	logistics_support
 clear:
-	rm -rf genprotos/*
+	rm -rf gen/*
 
 
 gen-restaurant-staff:

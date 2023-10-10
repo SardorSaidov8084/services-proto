@@ -88,6 +88,11 @@ message DeleteOrderRequest {
     string order_id = 1 [json_name = "order_id"];
 }
 message DeleteOrderResponse {}
+
+message CancelOrderRequest {
+    string order_id = 1 [json_name = "order_id"];
+}
+message CancelOrderResponse {}
 message ListOrderByEaterRequest {
     string eater_id = 1 [json_name = "eater_id"];
     string sort = 2 [json_name = "sort"];

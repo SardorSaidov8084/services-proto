@@ -27,6 +27,7 @@ service EaterService {
     rpc UpdateOrder(UpdateOrderRequest) returns (UpdateOrderResponse);
     rpc GetOrder(GetOrderRequest) returns (GetOrderResponse);
     rpc DeleteOrder(DeleteOrderRequest) returns (DeleteOrderResponse);
+    rpc CancelOrder(CancelOrderRequest) returns (CancelOrderResponse);
     rpc ListOrderByEater(ListOrderByEaterRequest) returns (ListOrderByEaterResponse);
     // rating
     rpc RateRestaurant(RateRestaurantRequest) returns (RateRestaurantResponse);
