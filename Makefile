@@ -6,7 +6,8 @@ PROTO_DIRS=eater \
 	restaurant_support \
 	logistics_staff \
 	logistics_vehicle \
-	logistics_support
+	logistics_support \
+	logistics_dispatching
 clear:
 	rm -rf gen/*
 
