@@ -1,6 +1,6 @@
 syntax = "proto3";
 option go_package = "github.com/SardorSaidov8084/services-proto/logistics_dispatching";
-package logistics_staff;
+package logistics_dispatching;
 import "logistics_dispatching/driver_status.proto";
 import "logistics_dispatching/order.proto";
 service DispatchingService {
